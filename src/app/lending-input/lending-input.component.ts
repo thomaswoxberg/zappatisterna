@@ -7,7 +7,8 @@ import { NouisliderModule } from 'ng2-nouislider';
   styleUrls: ['./lending-input.component.css']
 })
 export class LendingInputComponent implements OnInit {
-interest:Number; 
+interest:Number;
+amount:Number;  
   constructor() { }
 
   ngOnInit() {
@@ -15,5 +16,9 @@ interest:Number;
 
   changeInterest(value : number) {
     this.interest = value; 
+  }
+
+  changeAmount(value: Number) {
+    this.amount = value; 
   }
 }
