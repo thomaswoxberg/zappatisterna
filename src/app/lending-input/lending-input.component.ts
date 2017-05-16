@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { NouisliderModule } from 'ng2-nouislider';
 import {ApplicationService} from '../services/application.service'
+import {DialogModule} from 'primeng/primeng';
+import {ConfirmDialogModule,ConfirmationService} from 'primeng/primeng';
+
 
 @Component({
   selector: 'app-lending-input',
@@ -8,11 +11,12 @@ import {ApplicationService} from '../services/application.service'
   styleUrls: ['./lending-input.component.css']
 })
 export class LendingInputComponent implements OnInit {
+display: boolean = false;
 interest:Number;
 amount:Number;
 parameters:Array<any>=new Array();
 lenderID:String;  
-   constructor(private applicationService: ApplicationService) {
+   constructor(private applicationService: ApplicationService, private confirmationService: ConfirmationService) {
 
    }
 
@@ -40,4 +44,13 @@ let href:string = document.location.href;
   changeAmount(value: Number) {
     this.amount = value; 
   }
+
+    confirm() {
+        this.confirmationService.confirm({
+            message: 'Are you sure that you want to recklessy lend out your money?',
+            accept: () => {
+                //Actual logic to perform a confirmation
+            }
+        });
+    }
 }
