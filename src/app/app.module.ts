@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { LendingInputComponent } from './lending-input/lending-input.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LendingInputComponent
   ],
   imports: [
     BrowserModule,
