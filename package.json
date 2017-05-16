@@ -25,6 +25,7 @@
     "core-js": "^2.4.1",
     "ng2-nouislider": "^1.6.1",
     "nouislider": "^9.2.0",
+    "primeng": "^4.0.1",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   },
