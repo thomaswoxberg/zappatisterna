@@ -11,6 +11,7 @@ import {ListLoansComponent} from './list-loans/list-loans.component'
 const appRoutes: Routes = [
   { path: 'lender', component: LendingInputComponent },
   { path: 'borrower', component: ListLoansComponent },
+  { path: '', component: LendingInputComponent }
 ];
 
 @NgModule({
