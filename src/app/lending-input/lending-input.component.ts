@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NouisliderModule } from 'ng2-nouislider';
+import {ApplicationService} from '../services/application.service'
 
 @Component({
   selector: 'app-lending-input',
@@ -11,9 +12,13 @@ interest:Number;
 amount:Number;
 parameters:Array<any>=new Array();
 lenderID:String;  
-  constructor() { }
+   constructor(private applicationService: ApplicationService) {
 
-  ngOnInit() {
+   }
+
+  async ngOnInit() {
+    let response = await this.applicationService.getTest('http://lendafriend.azurewebsites.net/api/bcdb96fb-3452-46a8-b045-9f2c08e9f2f4/test'); 
+    console.log(response);
 let href:string = document.location.href;
     if(href.indexOf("?") != -1) {
         let query:string = href.substr(href.indexOf("?")+1);
@@ -25,7 +30,8 @@ let href:string = document.location.href;
 
        this.lenderID = this.parameters["lenderid"]; 
     }
- }
+ }  
+ 
 
   changeInterest(value : number) {
     this.interest = value; 
