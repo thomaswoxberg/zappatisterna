@@ -32,13 +32,26 @@
 }
 
 html {
- font-size: 18px;
- font-family: 'SEB', sans-serif !important;
+
+}
+
+h3 {
+ color: white;
+  font-size: 42px;
+   font-weight:300;
+ font-family: SEB, sans-serif !important;
 }
 
 .container {
  color: white;
+ font-family: SEB, sans-serif !important;
 }
+
+p {
+ color: white;
+ font-family: SEB, sans-serif !important;
+}
+
 
 @font-face {
     font-family: SEB;
