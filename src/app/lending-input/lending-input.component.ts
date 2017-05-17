@@ -53,4 +53,12 @@ let href:string = document.location.href;
             }
         });
     }
+    deny() {
+        this.confirmationService.confirm({
+            message: 'Are you sure?',
+            accept: () => {
+                //Actual logic to perform a confirmation
+            }
+        });
+    }
 }
