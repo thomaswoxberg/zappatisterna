@@ -10,3 +10,46 @@
  position: absolute;
  right: 100px;
 }
+
+.background{
+    background-image: url('../assets/purple_background.png'); 
+    top: 0px;
+    left: 0px;
+    z-index:0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    Background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    }
+
+.hidden-shit {
+ visibility: hidden;
+}
+
+html {
+ font-size: 18px;
+ font-family: 'SEB', sans-serif !important;
+}
+
+.container {
+ color: white;
+}
+
+@font-face {
+    font-family: SEB;
+    src: local('../assets/fonts/SEBSansSerif-Light.WOFF') format('woff');
+    font-weight:300;
+    font-style:normal;
+    }
+@font-face{font-family:SEB;src: local('../assets/fonts/SEBSansSerif-LightItalic.WOFF') format("woff");font-weight:300;font-style:italic}
+@font-face{font-family:SEB;src: local('../assets/fonts/SEBSansSerif-Regular.WOFF') format("woff");font-weight:400;font-style:normal}
+@font-face{font-family:SEB;src: local('../assets/fonts/SEBSansSerif-RegularItalic.WOFF') format("woff");font-weight:400;font-style:italic}
+@font-face{font-family:SEB;src: local('../assets/fonts/SEBSansSerif-Medium.WOFF') format("woff");font-weight:500;font-style:normal}
+@font-face{font-family:SEB;src: local('../assets/fonts/SEBSansSerif-MediumItalic.WOFF') format("woff");font-weight:500;font-style:italic}
+@font-face{font-family:SEB;src: local('../assets/fonts/SEBSansSerif-Bold.WOFF') format("woff");font-weight:600;font-style:normal}
+@font-face{font-family:SEB;src: local('../assets/fonts/SEBSansSerif-BoldItalic.WOFF') format("woff");font-weight:600;font-style:italic} 
