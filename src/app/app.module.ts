@@ -10,7 +10,7 @@ import { LendingInputComponent } from './lending-input/lending-input.component';
 import {ListLoansComponent} from './list-loans/list-loans.component'
 import {ApplicationService} from './services/application.service'
 import {DialogModule} from 'primeng/primeng';
-import {ConfirmDialogModule,ConfirmationService} from 'primeng/primeng';
+import {ConfirmDialogModule,ConfirmationService, DataListModule} from 'primeng/primeng';
 
 const appRoutes: Routes = [
   { path: 'lender', component: LendingInputComponent },
@@ -31,6 +31,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes), 
     DialogModule, 
     ConfirmDialogModule,
+    DataListModule, 
     BrowserAnimationsModule
   ],
   providers: [ApplicationService, ConfirmationService],
