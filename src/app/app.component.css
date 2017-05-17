@@ -40,16 +40,19 @@ h3 {
   font-size: 42px;
    font-weight:300;
  font-family: SEB, sans-serif !important;
+ font-style:normal;
 }
 
 .container {
  color: white;
  font-family: SEB, sans-serif !important;
+ font-style:normal;
 }
 
 p {
  color: white;
  font-family: SEB, sans-serif !important;
+ font-style:normal;
 }
 
 
