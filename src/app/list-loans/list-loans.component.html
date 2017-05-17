@@ -1,3 +1,14 @@
-<p>
-  list-loans works!
-</p>
+<b>Current status</b>
+<br/>
+<table>
+<tr *ngFor="let loanresponse of loanResponses">
+  <td style="height: 100px; padding-right: 40px; border-bottom: solid 1px #D5D5D5"><img src="assets/{{loanresponse.image}}.jpg" width="80" height="80"></td>
+  <td style="border-bottom: solid 1px #D5D5D5">
+    {{loanresponse.lenderName}} <br />
+    {{loanresponse.amount}} SEK | {{loanresponse.interest}} %
+  </td>
+  <td style="border-bottom: solid 1px #D5D5D5; padding-left: 100px;">
+    <img *ngIf="loanresponse.approved" src="assets/checkbox.png" width="50" height="50" />
+  </td>
+</tr>
+</table>
